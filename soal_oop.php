@@ -42,7 +42,7 @@ abstract class Animal {
     }
     function __destruct()
     {
-        echo "{$this->name} ini sudah mati" . "\n";
+        echo "- {$this->name} ini sudah mati" . "\n";
     }
     abstract public function makeSound();
     abstract public function getInfo();
@@ -88,15 +88,18 @@ $doggy = new Dog("doggy", 2, "husky");
 $doggy->makeSound();
 $doggy->getInfo();
 unset($doggy);
+echo "  ==================*================". "\n";
 
 $meong = new Cat("creamy", 5, "cream");
 $meong->makeSound();
 $meong->getInfo();
 unset($meong);
+echo "  ===================*================". "\n";
 
-$dog = new Dog("diggy", 2, "bulldog");
+$dog = new Dog("rush", 2, "bulldog");
 $dog->makeSound();
 $dog->getInfo();
 unset($dog);
+echo " ===================*=================". "\n";
 
 
